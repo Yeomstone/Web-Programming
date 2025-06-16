@@ -11,16 +11,33 @@
         }
         h4{
             color : rgb(4, 65, 4); /* 제목4의 글자색을 초록색으로 설정 */
+            font-family: '바탕'; /* 제목4의 글꼴을 바탕체로 설정 */
+            font-size: 20px; /* 제목4의 글자 크기를 20px로 설정 */
         }
-
+        /* 기본글자의 크기가 16px(기본값) 기준
+        h1 : 32px / h2 : 24px / h3 : 20px / h4 : 16px / h5 : 14px / h6 : 12px */
+        h6{
+            color : orange;
+            font-size : 64px; 
+            font-weight: lighter; /* 글자 두께를 얇게 설정 */
+            /* font-weight : normal(보통), bold(굵게), lighter(얇게) */ 
+        }
+        p{ 
+            color : navy; /* 글자색을 남색으로 설정 */
+            font-size : 20px; /* 글자 크기를 20px로 설정 */
+            font-weight : bold; /* 글자 두께를 두껍게 설정 */
+            font-family: '휴먼모음T'; /* 글꼴을 궁서체로 설정 */
+            line-height: 30px;
+        }
+        /* 글자 크기 순서는 div > p > h6 > h5 > h4 > h3 > h2 > h1 */
     </style>
 </head>
 <body>
-    <h5>
+    <p>
     제목태그 : 해당 태그는 문서의 제목을 나타냄.<br>
     h 뒤에 숫자가 클수록 제목의 크기가 작아짐. <br>
     제목들은 항상 구조적으로(h1태그부터 순서대로) 사용해야함.
-    </h5>
+    </p>
     <h1>문서의 제목입니다.</h1>
     <h2>문서의 제목입니다.</h2>
     <h3>문서의 제목입니다.</h3>
