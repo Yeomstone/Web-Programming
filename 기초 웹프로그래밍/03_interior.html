@@ -8,6 +8,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 <style>
+    *{
+        /* body내에 있는 태그 전체 선택자 */
+        /* 여백을 없애는 코드 */
+        margin : 0;
+        padding : 0;
+    }
     @font-face {
     font-family: 'YESMyoungjo-Regular';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESMyoungjo-Regular.woff') format('woff');
@@ -21,6 +27,7 @@
     body{
         font-family: 'asia';
         font-size : 16px;
+        background-color : gray;
     }
 
     h1{
@@ -28,43 +35,57 @@
         font-size: 15px;
         text-align: center;
         color : rgb(0, 126, 175);
+        margin-bottom: 10px;
     }
     h2{
         font-family : 'Oswald', sans-serif;
         font-size: 10px;
         text-align: center;
         color : gray;
+        margin-bottom: 10px;
     }
     h3{
         font-family: 'YeSMyoungjo-Regular';
         font-size: 48px;
         text-align: center;
         font-weight: lighter;
+        margin-bottom: 10px;
     }
     h4{
         font-family: 'YeSMyoungjo-Regular';
-        font-size: 24px;
+        font-size: 16px;
         text-align: center;
         font-weight: lighter;
+        margin-bottom: 50px;
     }
     p{
         line-height: 28px;
+        margin-bottom: 15px;
     }
     /* 태그에 id 값을 주었을 때 */
     /* id는 중복 불가 */
     #one{
         font-weight: bold;
-    }
+        }
     /* 태그에 클래스 값을 주었을 때 */
     /* 클래스는 중복 가능 */
     .bold{
         font-weight: bold;
+        margin-bottom: 20px;
     }
-
-
-
+    div{
+        width: 700px; /* 고정값 */
+        margin: 50px auto; /* 좌우 여백을 자동으로 설정 */
+        background-color: white;
+        padding: 50px 100px;;
+        }
+    .img{
+        margin-top : 30px;
+        text-align: center;
+    }
 </style>
 <body>
+    <div>
     <h1>[ Interior ]</h1>
     <h2>우먼센스</h2>
     <h3>이사철 인테리어 Q&A</h3>
@@ -79,7 +100,9 @@
          &lt우먼센스&gt 독자들의 설문조사를 바탕으로 이사철리모델링에 대한 전문가의 조언을 들어보았다. 
          정확한 정보를 바탕으로 제대로 계획을 세워 리모델딩하되 마감재 선택 시 소재를 꼼꼼히 따진다면
          우리 가족의 라이프스타일에 꼭 맞는 만족스러운 주거 공간을 완성할 수 있다.</p>
-</body>
+         <p class="img"><img src = C:/웹프로그래밍/Web-Programming/interior/remodeling.jpg alt=이미지></p>
+        </div>
+        </body>
 </html>
 <!-- display : 요소의 종류(태그의 표시 영역)-->
 <!-- 블록 요소 : div, p, h1, h2, h3, h4, h5, h6 - 브라우저의 좌우 공간을 모두 차지하는 독립적인 영역 -->
