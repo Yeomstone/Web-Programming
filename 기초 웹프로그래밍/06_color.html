@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>다양한 색상과 배경적용</title>
+</head>
+<style>
+    *{
+        /* body내에 있는 태그 전체 선택자 */
+        /* 여백을 없애는 코드 */
+        margin : 0;
+        padding : 0;
+    }
+    div{
+        width : 800px;
+        height : 600px;
+        background-color: beige;
+    }
+    #box1{
+        font-size: 48px;
+        background-color: rgba(252, 147, 147);
+    }
+    #box2{
+        background-image:url(images/배경이미지.jpg);
+        background-repeat: no-repeat;
+        background-size: 300px;
+        background-position: center;
+    }
+
+    
+</style>
+<body>
+    <h1>다양한 색상과 배경적용</h1>
+    <h2>단일 색상 적용</h2>
+    <div id = "box1"> 한가지 색상만을 적용</div>
+    <p>-색상의 이름 : red, orange...</p>
+    <p>-색상의 코드 : #FF0000, #FFA500...</p>      
+    <p>-색상의 RGB값 : rgb(255, 0, 0), rgb(255, 165, 0)...</p>
+    <p>-색상 + 투명도 : rgba(252, 147, 147, a)</p>
+    <p>a : alpha(투명도) - 0%(0)~100%(1) </p>
+
+    <h2>배경이미지 적용</h2>
+    <div id="box2">.jpg / .png / .gif / .svg  / .webP</div>
+    <p>background-image:url(이미지의 경로);</p>
+
+    <h3>배경이미지 반복 background-repeat</h3>
+    <p>repeat : 반복, 기본값</p>
+    <p>no-repeat : 반복하지 않음</p>
+    <p>repeat-x : 가로 방향으로 반복</p>
+    <p>repeat-y : 세로 방향으로 반복</p>
+
+    <h3>배경이미지 크기 background-size</h3>
+    <p>가로 세로 : 수치값으로 직접 입력(단위는 px, %)</p>
+    <p>contain : 영역에 배경을 채움 (비율유지)</p>
+    <p>cover : 배경이 영역 전체를 덮음 (비율유지)</p>
+
+    <h3>배경이미지 위치 background-position</h3>
+    <p> x y : 수치값으로 직접입력 (단위는 px, %)</p>
+    <p>left / center / right</p>
+    <p>top / bottom</p>
+</body>
+</html>
