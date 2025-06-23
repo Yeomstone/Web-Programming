@@ -1,0 +1,51 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+@font-face {
+    font-family: 'sc';
+    src: url(post/font/SCDream4.otf);
+}
+body{
+    font-family: 'sc';
+    font-size: 14px;
+}
+#title{
+    background-image: url(post/back.jpg);
+    height: 530px;
+    background-size: cover; /* 배경 이미지 크기를 요소 크기에 맞게 조정 */
+    background-position: 0 -150px; /* 배경 이미지 위치 조정 */
+    color : white;
+    text-align: center;
+    padding-top: 100px; /* 상단 여백 추가 */
+    box-sizing: border-box; /* 패딩을 포함한 전체 크기 계산 */
+}
+h1{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+h2{
+    color : white;
+    text-align: center;
+    line-height: 60px;
+    font-size: 42px;    
+}
+#bar{
+    background-color: palevioletred;
+    width: 800px;
+    margin : 0 auto; /* 가운데 정렬 */
+    margin-top: 80px; /* 상단 여백 추가 */
+    text-align: right; /* 오른쪽 정렬 */
+}
+span{
+    background-color: white;
+    display: inline-block; /* 인라인 블록으로 설정하여 너비와 높이 적용 가능 */
+    width: 170px; /* 너비 설정 */
+    margin-right: 80px; /* 오른쪽 여백 추가 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    padding : 0 10px; /* 상하 0 좌우 10px 여백 추가 */
+}
+i{
+    font-style: normal; /* 이탤릭체 제거 */
+    letter-spacing: 3px; /* 글자 간격 조정 */
+}
