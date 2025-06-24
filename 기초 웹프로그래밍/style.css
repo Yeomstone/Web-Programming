@@ -49,3 +49,32 @@ i{
     font-style: normal; /* 이탤릭체 제거 */
     letter-spacing: 3px; /* 글자 간격 조정 */
 }
+#text{
+    width: 700px;
+    margin : 0 auto; /* 가운데 정렬 */
+    margin-top: 50px; /* 상단 여백 추가 */
+}
+#text p{
+    margin-bottom: 30px; /* 문단 간격 조정 */
+    line-height: 25px; /* 줄 간격 조정 */
+}
+.gray{
+    color: gray; /* 회색 텍스트 */
+    text-align: center; /* 가운데 정렬 */
+    font-size: 12px; /* 작은 글씨 크기 */
+}
+.pink{
+    color : rgb(255, 71, 135);
+}
+strong{
+    font-size:24px; /* 강조된 텍스트 크기 조정 */
+}
+#link{
+    background-color: beige; /* 링크 영역 배경색 */
+    padding : 50px 0; /* 상하 50px 좌우 0px 여백 */
+}
+#in{
+    width: 800px; /* 링크 영역 너비 */
+    margin : 0 auto; /* 가운데 정렬 */
+}
+#in p{}
