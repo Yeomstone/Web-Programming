@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>폼태그</title>
+
+    <style>
+        *{
+            margin : 0;
+            padding : 0;
+            box-sizing: border-box;
+        }
+        @font-face {
+        font-family: 'Ownglyph_ParkDaHyun';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        }
+        body {
+            font-family: 'Ownglyph_ParkDaHyun', sans-serif;
+            padding: 24px;
+        }
+        h2{
+            margin-top: 50px;
+        }
+        p{
+            margin-top: 20px;
+        }
+        input{
+            font-family: 'Ownglyph_ParkDaHyun';
+            font-size: 24px;
+        }
+        #user_id{
+            width: 500px;
+            height: 50px;
+            padding: 0 10px;
+            border: 1px solid green;
+            border-radius: 5px;
+        }
+        #pwd{
+            width: 500px;
+            height: 50px;
+            padding: 0 10px;
+            
+            border-bottom: 1px solid red;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>form - 입력양식의 속성</h1>
+
+    <form>
+        <h2>유효성 검사</h2>
+        <p>입력필드에 값이 채워졌는지에 대한 부분을 판단해주는 속성</p>
+        <p>
+            <label for="user_id">아이디</label>
+            <input type="text" id="user_id" required placeholder="아이디를 입력하세요">
+        </p>
+
+        <h2>힌트 placeholder="힌트의 내용"</h2>
+        <p>입력필드에 대한 예시를 제공하는 속성</p>
+        <p>
+            <input type="password" id="pwd" placeholder="비밀번호" title="비밀번호">
+        </p>
+        
+        <h2>자동완성 autocomplete="on/off"</h2>
+        <p>입력필드에 대한 자동완성 기능을 활성화하거나 비활성화하는 속성</p>
+        <p>
+            <label for="email">이메일</label>
+            <input type="email" id="mail" autocomplete="off">
+        </p>
+
+        <h2>입력 필드 활성화 autofocus="autofocus"</h2>
+        <p>웹 페이지가 로딩되자마자 현재 위치를 태그로 포커스 이동</p>
+        <p>
+            <input type="search" title="검색" placeholder="검색어를 입력하세요" autofocus>
+        </p>
+
+
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>
