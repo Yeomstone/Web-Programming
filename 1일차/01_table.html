@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>table</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: 'NanumSquareNeo';
+      src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot);
+      src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.ttf) format("truetype");
+    }
+    body{
+      font-family: 'NanumSquareNeo';
+      font-size: 14px;
+    }
+    table{
+      border-spacing: 0;
+      margin: 50px;
+      border-top:1px solid #666;
+      border-left:1px solid #666;
+      width: 600px;
+    }
+    th{
+      border-right:1px solid #666;
+      border-bottom:1px solid #666;
+      width: 150px;
+      line-height: 23px;
+      padding:10px 0;
+      background-color: #92acce;
+    }
+    td{
+      border-right:1px solid #666;
+      border-bottom:1px solid #666;
+      width: 150px;
+      line-height: 23px;
+      padding:10px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>table</h1>
+  <p>표를 만들 때 사용하는 태그</p>
+
+  <table>
+    <tr>
+      <th>구분</th>
+      <th>필기원서접수 (인터넷)(휴일제외)</th>
+      <th>필기시험</th>
+      <th>필기합격 (예정자)발표</th>
+    </tr>
+    <tr>
+      <td rowspan="3">2025년<br>정기 기능사</td>
+      <td>2025.01.06<br>~<br>2025.01.09<br>[빈자리접수 :<br>2025.01.15<br>~<br>2025.01.16]</td>
+      <td>2025.01.21<br>~<br>2025.01.25</td>
+      <td>2025.02.06</td>
+    </tr>
+    <tr>
+      <td>2025.03.17<br>~<br>2025.03.21<br>[빈자리접수 :<br>2025.03.30<br>~<br>2025.03.31]</td>
+      <td>2025.04.05<br>~<br>2025.04.10</td>
+      <td>2025.04.16</td>
+    </tr>
+    <tr>
+      <td colspan="3">산업수요 맞춤형 고등학교 및 특성화 고등학교<br>기시험 면제자 검정<br>※ 일반인 필기시험 면제자 응시 불가</td>
+    </tr>
+  </table>
+</body>
+</html>
